@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Step-by-Step Learning Path</title>
+<meta charset="UTF-8">
+<style>
+body { background-color: #000080; color: #FFFF00; font-family: "Times New Roman", Times, serif; margin: 20px; }
+a { color: #00FFFF; }
+table { border: 2px solid #FFFF00; width: 100%; }
+td { padding: 8px; border: 1px solid #FFFF00; }
+.header { text-align: center; background-color: #FF0000; color: #FFFFFF; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>STEP-BY-STEP LEARNING PATH</h1>
+<p>Learn in this order so each step builds on the previous. Easier progression!</p>
+<a href="index.html">← Back to Home</a> | <a href="resources.html">Resources & Certs →</a>
+</div>
+
+<h2>Phase 1: Foundations (1-2 months) — START HERE</h2>
+<table>
+<tr><th>Topic</th><th>What to Learn First</th><th>Why This Order</th><th>Free Sources</th></tr>
+<tr><td>Linux Basics</td><td>Command line, file system, permissions, processes</td><td>Everything runs on Linux. Foundation for containers & cloud.</td><td>Linux Journey, freeCodeCamp YouTube, OverTheWire Bandit</td></tr>
+<tr><td>Scripting</td><td>Bash basics, then Python for automation</td><td>Automate everything. Python useful for AI later.</td><td>Bash scripting tutorial (freeCodeCamp), Python docs</td></tr>
+<tr><td>Docker</td><td>Containers, images, Dockerfile, docker-compose</td><td>Standard packaging. Required before Kubernetes.</td><td>Docker official docs, freeCodeCamp Docker course</td></tr>
+<tr><td>Git Advanced</td><td>Branching, PRs, workflows</td><td>Needed for CI/CD and collaboration.</td><td>Pro Git book (free), GitHub Skills</td></tr>
+</table>
+
+<h2>Phase 2: Core Platform Skills (3-4 months)</h2>
+<table>
+<tr><th>Topic</th><th>What to Learn</th><th>Order Tip</th><th>Free Sources</th></tr>
+<tr><td>Cloud Fundamentals</td><td>Azure basics (AZ-900 concepts): VMs, networking, storage, IAM</td><td>Azure first (matches .NET). Then concepts transfer to AWS.</td><td>Microsoft Learn (free), Azure free tier</td></tr>
+<tr><td>Terraform / IaC</td><td>Write, plan, apply infrastructure. Modules, state.</td><td>After cloud basics. High ROI cert.</td><td>HashiCorp Learn (free), Terraform docs</td></tr>
+<tr><td>Kubernetes</td><td>Pods, Deployments, Services, Ingress, ConfigMaps. Then CKA prep.</td><td>After Docker. Hands-on is key.</td><td>Kubernetes docs, KillerCoda labs, freeCodeCamp CKA</td></tr>
+<tr><td>CI/CD</td><td>GitHub Actions or Azure Pipelines for .NET app</td><td>After Git + Docker. Automate build/test/deploy.</td><td>GitHub Actions docs, Microsoft Learn</td></tr>
+<tr><td>Observability</td><td>Logging, metrics, Application Insights / Prometheus + Grafana</td><td>After deployment basics. Reliability focus.</td><td>Official docs, free labs</td></tr>
+</table>
+
+<h2>Phase 3: Applied AI Layer (ongoing, months 6-12)</h2>
+<table>
+<tr><th>Topic</th><th>What to Learn</th><th>Why Now</th><th>Free Sources</th></tr>
+<tr><td>LLM Fundamentals</td><td>Prompting, tokens, RAG basics, evaluation</td><td>After platform skills so you can deploy them.</td><td>Microsoft Learn Semantic Kernel path, free papers</td></tr>
+<tr><td>Semantic Kernel + Azure OpenAI</td><td>Integrate LLMs into .NET apps, plugins, agents</td><td>Leverages your .NET background perfectly.</td><td>Microsoft Learn, Semantic Kernel docs & samples</td></tr>
+<tr><td>RAG & Vector Search</td><td>Embeddings, Azure AI Search or pgvector</td><td>Practical production AI feature.</td><td>Microsoft docs, free tutorials</td></tr>
+<tr><td>Production AI</td><td>Monitoring, cost control, reliability of AI systems</td><td>Combines DevOps + AI. Future-proof.</td><td>Azure AI docs, community blogs</td></tr>
+</table>
+
+<h2>Recommended Projects (build while learning)</h2>
+<ul>
+<li>Phase 1: Simple Dockerized .NET API + Angular frontend</li>
+<li>Phase 2: Full CI/CD + Terraform deploy to Azure (AKS or App Service)</li>
+<li>Phase 3: Add RAG search or simple agent to the app</li>
+</ul>
+
+<p><b>Progress Tracker:</b> Check off topics as you complete them. Focus 8-10 hours/week.</p>
+<p><a href="resources.html">See detailed free sources and certifications →</a></p>
+</body>
+</html>
