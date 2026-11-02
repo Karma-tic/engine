@@ -1,64 +1,174 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>90s DevOps & AI Learning Path Tracker</title>
+<title>DevOps & Applied AI Learning Path</title>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body { background-color: #F0F0F0; color: #333333; font-family: "Times New Roman", Times, serif; margin: 20px; }
-a { color: #0000EE; }
-a:visited { color: #551A8B; }
-a:hover { color: #FF0000; }
-table { border: 2px solid #333333; width: 100%; background-color: #FFFFFF; }
-td { padding: 10px; vertical-align: top; }
-.header { text-align: center; background-color: #4A90D9; color: #FFFFFF; font-size: 24px; padding: 10px; }
-.blink { animation: blink 1s infinite; }
-@keyframes blink { 50% { opacity: 0; } }
-.marquee { background-color: #FFFFFF; color: #006600; padding: 5px; border: 1px solid #333333; }
+body { background-color: #f5f5f5; color: #333; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+h1 { color: #1a73e8; }
+h2 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 5px; }
+.step { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin: 15px 0; }
+.step h3 { margin-top: 0; }
+.checkbox { margin-right: 8px; }
+a { color: #1a73e8; }
+.progress { background: #e0e0e0; border-radius: 10px; height: 20px; margin: 10px 0; }
+.progress-bar { background: #4caf50; height: 100%; border-radius: 10px; width: 0%; transition: width 0.3s; }
+.done { opacity: 0.6; text-decoration: line-through; }
 </style>
 </head>
 <body>
-<div class="header">
-<marquee behavior="scroll" direction="left">*** WELCOME TO THE ULTIMATE 90s STYLE DEVOPS & APPLIED AI LEARNING PATH TRACKER *** FREE RESOURCES & CERTIFICATIONS ***</marquee>
-<h1 class="blink">🚀 DEVOPS / PLATFORM ENGINEERING + AI PATH 🚀</h1>
-<p>From .NET / Testing Background to Future-Proof Engineer</p>
-</div>
+<h1>DevOps / Platform Engineering + Applied AI Guided Path</h1>
+<p>Follow the steps in order. Check off items as you finish them — progress is saved in your browser.</p>
 
-<table>
-<tr>
-<td width="20%">
-<h3>NAVIGATION</h3>
+<div class="progress"><div class="progress-bar" id="bar"></div></div>
+<p id="percent">0% complete</p>
+
+<div id="steps">
+
+<div class="step">
+<h2>1. Linux Fundamentals (Start here)</h2>
+<label><input type="checkbox" class="checkbox" data-id="linux1"> Learn the command line, files, permissions, and processes</label><br>
+<p>Resources:</p>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="path.html">Step-by-Step Path</a></li>
-<li><a href="resources.html">Free Sources & Certs</a></li>
+<li><a href="https://linuxjourney.org/" target="_blank">Linux Journey</a> — interactive free lessons</li>
+<li><a href="https://www.youtube.com/watch?v=wBp0Rb-ZJak" target="_blank">freeCodeCamp Linux Command Line Full Course</a></li>
+<li><a href="https://overthewire.org/wargames/bandit/" target="_blank">OverTheWire Bandit</a> — practice challenges</li>
 </ul>
-<p><font color="#CC0000"><b>Learning Tracker</b></font></p>
-<p>Track your progress manually!</p>
-</td>
-<td width="80%">
-<h2>Full Path Overview</h2>
-<p>This site tracks your deep dive into <b>Platform Engineering / DevOps</b> with an <b>Applied AI</b> layer. Based on 2026 market data: less replaceable by AI than pure coding, high demand in India.</p>
-
-<p><b>Recommended Order (makes path easier):</b></p>
-<ol>
-<li>Foundations (Linux, Scripting, Docker)</li>
-<li>Core Platform (Cloud, Terraform, Kubernetes, CI/CD)</li>
-<li>Applied AI Layer (Semantic Kernel, RAG, Agents on .NET/Azure)</li>
-<li>Projects + Certs throughout</li>
-</ol>
-
-<p><font color="#006600">Start here → <a href="path.html">Step-by-Step Learning Path</a></font></p>
-
-<p><b>Why this path?</b> Leverages your .NET + testing experience. Azure first, skills transfer. Deep systems knowledge > pure frontend/backend coding.</p>
-
-<hr>
-<p><center><font size="2">Built in pure HTML for that authentic 90s feel | Last Updated: Nov 2026</font></center></p>
-</td>
-</tr>
-</table>
-
-<div class="marquee">
-<marquee>Free resources only! No paid courses needed to start. Certs: Terraform Associate, CKA, AZ-104, AZ-400 recommended.</marquee>
 </div>
+
+<div class="step">
+<h2>2. Scripting Basics</h2>
+<label><input type="checkbox" class="checkbox" data-id="script1"> Bash scripting for automation</label><br>
+<label><input type="checkbox" class="checkbox" data-id="script2"> Basic Python for scripts</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=e7BufAVwDiM" target="_blank">freeCodeCamp Bash Scripting Tutorial</a></li>
+<li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Python official getting started</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>3. Docker</h2>
+<label><input type="checkbox" class="checkbox" data-id="docker1"> Understand containers, images, Dockerfile, and docker-compose</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=fqMOX6JJhGo" target="_blank">freeCodeCamp Docker Tutorial for Beginners</a></li>
+<li><a href="https://docs.docker.com/get-started/" target="_blank">Docker official Get Started</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>4. Git Workflows</h2>
+<label><input type="checkbox" class="checkbox" data-id="git1"> Branching, pull requests, and collaboration</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book (free)</a></li>
+<li><a href="https://skills.github.com/" target="_blank">GitHub Skills interactive courses</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>5. Azure Cloud Fundamentals</h2>
+<label><input type="checkbox" class="checkbox" data-id="azure1"> Cloud concepts, VMs, storage, networking, IAM basics</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/" target="_blank">Microsoft Learn — Azure Fundamentals: Describe cloud concepts</a></li>
+<li><a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure Free Account</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>6. Terraform (Infrastructure as Code)</h2>
+<label><input type="checkbox" class="checkbox" data-id="tf1"> Write, plan, and apply infrastructure</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://developer.hashicorp.com/terraform/tutorials" target="_blank">HashiCorp Learn — Terraform Tutorials</a></li>
+<li><a href="https://developer.hashicorp.com/terraform/tutorials/azure-get-started" target="_blank">Terraform Azure Get Started</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>7. Kubernetes</h2>
+<label><input type="checkbox" class="checkbox" data-id="k8s1"> Pods, Deployments, Services, and basic cluster management</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://kubernetes.io/docs/tutorials/" target="_blank">Kubernetes Official Tutorials</a></li>
+<li><a href="https://killercoda.com/" target="_blank">KillerCoda interactive labs</a></li>
+<li><a href="https://www.youtube.com/results?search_query=freecodecamp+cka" target="_blank">freeCodeCamp CKA preparation videos</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>8. CI/CD Pipelines</h2>
+<label><input type="checkbox" class="checkbox" data-id="cicd1"> Automate build, test, and deploy for a .NET app</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://docs.github.com/en/actions" target="_blank">GitHub Actions documentation</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/" target="_blank">Azure Pipelines docs</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>9. Observability</h2>
+<label><input type="checkbox" class="checkbox" data-id="obs1"> Logging, metrics, and basic monitoring</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/" target="_blank">Azure Monitor / Application Insights</a></li>
+<li><a href="https://prometheus.io/docs/introduction/overview/" target="_blank">Prometheus overview</a></li>
+</ul>
+</div>
+
+<div class="step">
+<h2>10. Applied AI Layer (after the above)</h2>
+<label><input type="checkbox" class="checkbox" data-id="ai1"> Prompting, RAG basics, and integrating LLMs</label><br>
+<label><input type="checkbox" class="checkbox" data-id="ai2"> Semantic Kernel with Azure OpenAI in .NET</label><br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/semantic-kernel/" target="_blank">Microsoft Learn — Semantic Kernel</a></li>
+<li><a href="https://github.com/microsoft/semantic-kernel" target="_blank">Semantic Kernel GitHub samples</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/" target="_blank">Azure OpenAI documentation</a></li>
+</ul>
+</div>
+
+</div>
+
+<script>
+const checkboxes = document.querySelectorAll('.checkbox');
+const bar = document.getElementById('bar');
+const percent = document.getElementById('percent');
+
+function updateProgress() {
+  let total = checkboxes.length;
+  let done = 0;
+  checkboxes.forEach(cb => {
+    if (cb.checked) done++;
+    const step = cb.closest('.step');
+    if (cb.checked) step.classList.add('done');
+    else step.classList.remove('done');
+  });
+  let pct = Math.round((done / total) * 100);
+  bar.style.width = pct + '%';
+  percent.textContent = pct + '% complete';
+  localStorage.setItem('devopsProgress', JSON.stringify(
+    Array.from(checkboxes).map(cb => ({id: cb.dataset.id, checked: cb.checked}))
+  ));
+}
+
+checkboxes.forEach(cb => {
+  cb.addEventListener('change', updateProgress);
+});
+
+// Load saved progress
+const saved = localStorage.getItem('devopsProgress');
+if (saved) {
+  const data = JSON.parse(saved);
+  data.forEach(item => {
+    const cb = document.querySelector(`[data-id="${item.id}"]`);
+    if (cb) cb.checked = item.checked;
+  });
+}
+updateProgress();
+</script>
 </body>
 </html>
